@@ -7,9 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <ListView
-        android:id="@+id/lvGithubUser"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGithubUser"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_item_githubuser"
+        tools:itemCount="10" />
 
 </LinearLayout>
