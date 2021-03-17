@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">GitHub User</string>
+    <string name="label_name">Github Name</string>
+    <string name="label_username">Github Username</string>
+    <string name="cd_avatar_github_user">Avatar Github User</string>
 
     <string-array name="username">
         <item>JakeWharton</item>
