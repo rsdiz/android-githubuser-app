@@ -1,4 +1,4 @@
-package id.rosyid.githubuser.ui
+package id.rosyid.githubuser.ui.list
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

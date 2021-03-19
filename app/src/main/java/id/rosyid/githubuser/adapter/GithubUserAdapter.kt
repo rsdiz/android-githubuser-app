@@ -1,4 +1,4 @@
-package id.rosyid.githubuser.ui
+package id.rosyid.githubuser.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
