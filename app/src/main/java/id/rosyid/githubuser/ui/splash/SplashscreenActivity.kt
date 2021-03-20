@@ -7,6 +7,7 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import id.rosyid.githubuser.databinding.ActivitySplashscreenBinding
 import id.rosyid.githubuser.ui.list.MainActivity
+import id.rosyid.githubuser.util.Fullscreen
 
 class SplashscreenActivity : AppCompatActivity() {
 
@@ -26,5 +27,10 @@ class SplashscreenActivity : AppCompatActivity() {
             },
             timeout
         )
+    }
+
+    override fun onWindowFocusChanged(hasFocus: Boolean) {
+        super.onWindowFocusChanged(hasFocus)
+        if (hasFocus) Fullscreen.apply(window)
     }
 }
