@@ -2,7 +2,6 @@ package id.rosyid.githubuser.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -12,7 +11,7 @@ import id.rosyid.githubuser.databinding.RowItemGithubuserBinding
 
 class GithubUserAdapter(
     private val listGithubuser: ArrayList<GithubUser>,
-    private val clickListener: (GithubUser) -> View.OnClickListener
+    private val clickListener: (GithubUser) -> Unit
 ) : RecyclerView.Adapter<GithubUserAdapter.ListViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         return ListViewHolder(
@@ -35,7 +34,7 @@ class GithubUserAdapter(
     inner class ListViewHolder(
         val binding: RowItemGithubuserBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(githubUser: GithubUser, clickListener: (GithubUser) -> View.OnClickListener) {
+        fun bind(githubUser: GithubUser, clickListener: (GithubUser) -> Unit) {
             val context: Context = binding.root.context as Context
             Glide.with(context)
                 .load(githubUser.avatar)
@@ -44,7 +43,7 @@ class GithubUserAdapter(
                 .into(binding.ivAvatarUser)
             binding.tvName.text = githubUser.name
             binding.tvUsername.text = githubUser.username
-            binding.baseLayout.setOnClickListener(clickListener(githubUser))
+            binding.baseLayout.setOnClickListener { clickListener(githubUser) }
         }
     }
 }
