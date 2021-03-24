@@ -1,15 +1,15 @@
 package id.rosyid.githubuser.ui.list
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.LinearLayoutManager
 import id.rosyid.githubuser.adapter.GithubUserAdapter
 import id.rosyid.githubuser.data.DataList
 import id.rosyid.githubuser.data.GithubUser
 import id.rosyid.githubuser.databinding.ActivityMainBinding
 import id.rosyid.githubuser.ui.GithubUserCallback
+import id.rosyid.githubuser.ui.detail.DetailActivity
 
 class MainActivity : AppCompatActivity(), GithubUserCallback {
 
@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity(), GithubUserCallback {
     }
 
     override fun sendGithubUser(githubUser: GithubUser) {
-        // TODO: send data with intent
+        val bundle = Bundle()
+        bundle.putParcelable(DetailActivity.DATA_USER, githubUser)
+        val intentDetail = Intent(this, DetailActivity::class.java)
+        startActivity(intentDetail, bundle)
     }
 }
