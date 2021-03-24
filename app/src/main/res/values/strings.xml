@@ -3,6 +3,16 @@
     <string name="label_name">Github Name</string>
     <string name="label_username">Github Username</string>
     <string name="cd_avatar_github_user">Avatar Github User</string>
+    <string name="label_followers">Followers :</string>
+    <string name="value_followers">Value Followers</string>
+    <string name="label_followings">Followings :</string>
+    <string name="value_followings">Value Followings</string>
+    <string name="value_company">Company Name</string>
+    <string name="label_company">Company : </string>
+    <string name="label_location">Location : </string>
+    <string name="value_location">Location Name</string>
+    <string name="label_repository">Repositories : </string>
+    <string name="value_repository">Value Repository</string>
 
     <string-array name="username">
         <item>JakeWharton</item>

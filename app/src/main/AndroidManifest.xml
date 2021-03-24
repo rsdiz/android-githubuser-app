@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GitHubUser">
+        <activity android:name=".ui.detail.DetailActivity"></activity>
         <activity
             android:name=".ui.splash.SplashscreenActivity"
             android:theme="@style/Theme.GithubUser.NoActionBar">
