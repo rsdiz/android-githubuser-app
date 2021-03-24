@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import id.rosyid.githubuser.adapter.GithubUserAdapter
 import id.rosyid.githubuser.data.DataList
 import id.rosyid.githubuser.data.GithubUser
