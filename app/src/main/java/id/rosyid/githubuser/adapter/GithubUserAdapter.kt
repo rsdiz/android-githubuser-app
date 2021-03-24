@@ -39,7 +39,7 @@ class GithubUserAdapter(
             Glide.with(context)
                 .load(githubUser.avatar)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .centerCrop()
+                .circleCrop()
                 .into(binding.ivAvatarUser)
             binding.tvName.text = githubUser.name
             binding.tvUsername.text = githubUser.username

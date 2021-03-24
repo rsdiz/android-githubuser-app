@@ -2,20 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/baseLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingVertical="2dp"
-    android:paddingHorizontal="8dp">
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/ivAvatarUser"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:contentDescription="@string/cd_avatar_github_user" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="72dp"
         android:orientation="vertical"
         android:weightSum="2">
 
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center_vertical"
+            android:gravity="center_vertical|bottom"
             android:padding="8dp"
             android:text="@string/label_name"
             android:textColor="#5C6BC0"
@@ -36,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:gravity="top"
             android:padding="8dp"
             android:text="@string/label_username"
             android:textSize="14sp" />
